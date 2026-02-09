@@ -9,7 +9,7 @@ job "hello-devops" {
       driver = "docker"
 
       config {
-        image = "hello-devops:latest"
+        image = "hello-devop:v1"
       }
 
       resources {
