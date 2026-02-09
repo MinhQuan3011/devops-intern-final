@@ -1,0 +1,14 @@
+name: DevOps CI
+
+on: [push]
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run python
+        run: python hello.py
